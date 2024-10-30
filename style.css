@@ -1,0 +1,171 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+  transition: background-color 0.5s ease;
+  padding-top: var(--header-height);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: var(--white);
+  height: var(--header-height);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section__title {
+  font-size: var(--font-size-big);
+  margin-bottom: 2rem;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.watch {
+  display: flex;
+  gap: 20px;
+}
+
+.watch img {
+  width: 400px;
+  height: auto;
+}
+
+.color-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.jet-black {
+  background-color: #000;
+}
+
+.silver {
+  background-color: #ccc;
+}
+
+.rose-gold {
+  background-color: #E8A497;
+}
+
+.color-name {
+  margin-top: 10px;
+  font-size: var(--font-size-normal);
+  color: white;
+}
+
+body.in-view {
+  background-color: black;
+}
+
+
+.other-section {
+  padding: 50px;
+  background-color: white;
+  color: black;
+}
+.nav__logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  font-size: var(--font-size-normal);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav__link:hover {
+  color: var(--accent-color);
+}
+
+.nav__toggle {
+  display: none;
+}
+
+/* for mobilen */
+@media screen and (max-width: 768px) {
+  .nav__list {
+    display: flex;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .nav__list.active {
+    display: flex;
+    padding-top
+  }
+
+  .nav__toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav__toggle i {
+  font-size: 2rem;
+}
+img{
+  max-width: 100%;
+    height: auto;
+}
